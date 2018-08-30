@@ -1,3 +1,3 @@
 # deveye
 
-![avatar](https://github.com/YangKCoder/hexo-deveye/doc/1.png)
+![show](https://raw.githubusercontent.com/YangKCoder/hexo-deveye/master/doc/1.png)
