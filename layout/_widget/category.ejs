@@ -9,10 +9,6 @@
 <% if (site.categories.length){ %>
 <section class="widget widget_categories">
 	<h4 class="widget-title"><%= __('categories') %></h4>
-	<ul>
-		<li class="cat-item">
-			<%- list_categories({show_count: theme.show_count}) %>
-		</li>
-	</ul>
+	<%- list_categories({show_count: theme.show_count}) %>
 </section>
 <% } %>
