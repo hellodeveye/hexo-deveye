@@ -7,7 +7,6 @@
   </div>
 <% } %>-->
 
-<% if (site.categories.length){ %>
 <section class="widget widget_posts_entries">
 	<h4 class="widget-title"><%= __('archive_a') %></h4>
 	<%- list_archives({
@@ -16,4 +15,3 @@
 		format: 'YYYY年MM月'
 	}) %>
 </section>
-<% } %>
