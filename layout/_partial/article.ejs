@@ -4,7 +4,7 @@
 			<figure class="post-figure">
 				<%
 					var mod = i % 9;
-					var default_url = "images/cover/"+ mod +".jpg";
+					var default_url = config.url+"/images/cover/"+ mod +".jpg";
 				%>
 				<img src="<%- post.cover || default_url %>" alt=""> 
 				
