@@ -1,0 +1,36 @@
+<header id="crt-header">
+	<div class="crt-head-inner crt-container">
+		<div class="crt-container-sm">
+			<div class="crt-head-row">
+				<div id="crt-head-col1" class="crt-head-col text-left">
+					<a id="crt-logo" class="crt-logo" href="<%- config.root %>">
+						<img src="<%= theme.logo_image_source %>" alt="certy resume"><span><%= config.title%></span>
+					</a>
+				</div>
+				<div id="crt-head-col2" class="crt-head-col text-right">
+					<div class="crt-nav-container crt-container hidden-sm hidden-xs">
+						<nav id="crt-main-nav">
+
+							<ul class="clear-list">
+								<% for (name in theme.menu) { %>
+								<li>
+									<a href="<%- url_for(theme.menu[name]) %>">
+										<%= name %>
+									</a>
+								</li>
+								<% } %>
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				<div id="crt-head-col3" class="crt-head-col text-right">
+					<button id="crt-sidebar-btn" class="btn btn-icon btn-shade">
+                                 <span class="crt-icon crt-icon-side-bar-icon"></span>
+                             </button>
+				</div>
+			</div>
+		</div>
+		<!-- .crt-head-inner -->
+	</div>
+</header>

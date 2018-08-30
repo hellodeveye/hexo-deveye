@@ -1,0 +1,55 @@
+<div id="crt-sidebar">
+	<button id="crt-sidebar-close" class="btn btn-icon btn-light btn-shade">
+		<span class="crt-icon crt-icon-close"></span>
+	</button>
+
+	<div id="crt-sidebar-inner">
+		<nav id="crt-main-nav-sm" class="visible-xs text-center">
+
+			<ul class="clear-list">
+				<% for (name in theme.menu) { %>
+				<li>
+					<a href="<%- url_for(theme.menu[name]) %>">
+						<%= name %>
+					</a>
+				</li>
+				<% } %>
+			</ul>
+		</nav>
+
+		<div class="crt-card bg-primary text-center">
+			<div class="crt-card-avatar">
+				<img class="avatar avatar-195" src="<%= theme.about_widget_avatar_url %>" srcset="<%= theme.about_widget_avatar_url %>" width="195" height="195" alt="">
+			</div>
+			<div class="crt-card-info">
+				<h2 class="text-upper"><%= theme.about_widget_nikename %></h2>
+
+				<p class="text-muted">
+					<%- theme.about_widget_text %>
+				</p>
+				<ul class="crt-social clear-list">
+					<% theme.social_platforms.forEach(function(platform) { %>
+					<li>
+						<a href="<%- platform.url %>" target="_blank">
+							<span class="crt-icon <%- platform.crt_icon %>"></span>
+						</a>
+					</li>
+					<% }) %>
+				</ul>
+			</div>
+		</div>
+		<aside class="widget-area">
+			<!--search -->
+			<%- partial('_widget/search') %>
+			<!-- tag clouds-->
+			<%- partial('_widget/tagcloud') %>
+
+			<!-- Recent Posts-->
+			<%- partial('_widget/recent_posts') %>
+			<!-- 分类列表-->
+			<%- partial('_widget/category') %>
+		</aside>
+
+	</div>
+	<!-- #crt-sidebar-inner -->
+</div>

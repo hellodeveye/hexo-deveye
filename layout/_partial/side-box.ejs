@@ -1,0 +1,28 @@
+<div id="crt-side-box-wrap" class="crt-sticky">
+	<div id="crt-side-box">
+		<div class="crt-side-box-item">
+			<div class="crt-card bg-primary text-center">
+				<div class="crt-card-avatar">
+					<img class="avatar avatar-195" src="<%= theme.about_widget_avatar_url %>" srcset="<%= theme.about_widget_avatar_url %>" width="195" height="195" alt="">
+				</div>
+				<div class="crt-card-info">
+					<h2 class="text-upper"><%= theme.about_widget_nikename%></h2>
+					<p class="text-muted"><%- theme.about_widget_text %></p>
+					<ul class="crt-social clear-list">
+						<% theme.social_platforms.forEach(function(platform) { %>
+		                    <li>
+								<a href="<%- platform.url %>" target="_blank">
+									<span class="crt-icon <%- platform.crt_icon %>"></span>
+								</a>
+							</li>
+		                <% }) %>
+					</ul>
+				</div>
+			</div>
+				<div class="crt-side-box-btn">
+				<!--<a class="btn btn-default btn-lg btn-block btn-thin btn-upper" href="#">Download Resume</a>-->
+				<%- theme.about_widget_bottom %>
+			</div>
+		</div>
+	</div>
+</div>

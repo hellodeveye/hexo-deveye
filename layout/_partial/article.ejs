@@ -1,0 +1,63 @@
+<article class="post hentry">
+	<div class="post-media">
+		<a href="<%- url_for(post.path) %>" rel="bookmark">
+			<figure class="post-figure">
+				<%
+					var mod = i % 9;
+					var default_url = "images/cover/"+ mod +".jpg";
+				%>
+				<img src="<%- post.cover || default_url %>" alt=""> 
+				
+			</figure>
+		</a>
+	</div>
+	<div class="padd-box-sm">
+		<header class="post-header text-center">
+			<h2 class="post-title entry-title"><a rel="bookmark" href="<%- url_for(post.path) %>"><%= post.title %></a></h2>
+			<div class="post-header-info">
+				<span class="posted-on"><span class="screen-reader-text">Posted on </span>
+				<a href="#" rel="bookmark">
+					<time class="post-date published" datetime="<%- date(post.date, 'YYYY/M/D') %>"><%- date(post.date, 'YYYY/M/D') %></time>
+					<time class="post-date updated" datetime="<%- date(post.date, 'YYYY/M/D') %>"><%- date(post.date, 'YYYY/M/D') %></time>
+				</a>
+				</span>
+				&nbsp;<span class="post-author vcard">by <a class="url fn n" href="#" rel="author"><%= post.author || theme.default_post_author %></a></span>
+			</div>
+		</header>
+
+		<div class="post-content entry-content editor clearfix clear-mrg">
+			<p>
+				<%= post.excerpt %>
+			</p>
+		</div>
+
+		<footer class="post-footer">
+			<div class="post-footer-top brd-btm clearfix">
+				<div class="post-footer-info">
+					<span class="post-cat-links"><span class="screen-reader-text">Tags</span>
+					<% if (post.categories && post.categories.length){ %>
+					  <%- list_categories(post.categories, {
+					    show_count: false,
+					    class: 'article-category',
+					    style: 'unordered list'
+					  }) %>
+					<% } %>
+					</span>
+					<% if (post.tags && post.tags.length && post.categories && post.categories.length){ %>
+						<span class="post-line">|</span>
+					<% } %>
+					<% if (post.tags && post.tags.length){ %>
+					  <%- list_tags(post.tags, {
+					    show_count: false,
+					    class: 'article-tag',
+					    style: 'unordered list'
+					  }) %>
+					<% } %>
+				</div>
+				<div class="post-more">
+					<a class="btn btn-sm btn-primary" href="<%- url_for(post.path) %>" rel="bookmark"><%= theme.excerpt_link %></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</article>

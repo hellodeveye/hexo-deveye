@@ -1,0 +1,16 @@
+<!--<% if (site.tags.length){ %>
+  <div class="widget-wrap">
+    <h3 class="widget-title"><%= __('tagcloud') %></h3>
+    <div class="widget tagcloud">
+      <%- tagcloud() %>
+    </div>
+  </div>
+<% } %>-->
+<section id="tag_cloud-2" class="widget widget_tag_cloud">
+	<h2 class="widget-title"><%= __('tagcloud') %></h2>
+	<div class="tagcloud">
+		<% if (site.tags.length){ %>
+				<%- tagcloud() %>
+		<% } %>
+		</div>
+</section>

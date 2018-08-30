@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
+	<%- partial('_partial/head') %>
+
+	<body class="category">
+		<div class="crt-wrapper">
+			<%- partial('_partial/header') %>
+			<div id="crt-container" class="crt-container">
+				<%- partial('_partial/side-box') %>
+				<div class="crt-container-sm">
+					<div class="crt-paper-layers">
+						<div class="crt-paper clearfix">
+							<div class="crt-paper-cont paper-padd clear-mrg">
+								<%- body %>
+							</div>
+						</div>
+					</div>
+				</div>
+				<%- partial('_partial/sidebar') %>
+				<%- partial('_partial/footer') %>
+				<%- partial('_partial/background') %>
+			</div>
+	</body>
+
+</html>

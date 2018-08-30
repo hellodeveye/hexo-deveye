@@ -1,0 +1,12 @@
+<header class="post-header text-center">
+	<h1 class="post-title entry-title"><%= post.title %></h1>
+	<div class="post-header-info">
+		<span class="posted-on"><span class="screen-reader-text">Posted on </span>
+		<a href="#" rel="bookmark">
+			<time class="post-date published" datetime="<%- date(page.date , 'YYYY/M/D') %>"><%- date(page.date , 'YYYY/M/D') %></time>
+			<time class="post-date updated" datetime="<%- date(page.date , 'YYYY/M/D') %>"><%- date(page.date , 'YYYY/M/D') %></time>
+		</a>
+		</span>
+		&nbsp;<span class="post-author vcard">by <a class="url fn n" href="#" rel="author"><%= post.author || theme.default_post_author %></a></span>
+	</div>
+</header>

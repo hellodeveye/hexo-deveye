@@ -1,2 +1,1 @@
-# hexo-deveye
-a hexo theme
+# deveye
