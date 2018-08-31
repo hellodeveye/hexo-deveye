@@ -4,7 +4,7 @@
 			<figure class="post-figure">
 				<%
 					var mod = i % 9;
-					var default_url = config.url+"/images/cover/"+ mod +".jpg";
+					var default_url = "/images/cover/"+ mod +".jpg";
 				%>
 				<img src="<%- post.cover || default_url %>" alt=""> 
 				
@@ -39,7 +39,7 @@
 					  <%- list_categories(post.categories, {
 					    show_count: false,
 					    class: 'article-category',
-					    style: 'unordered list'
+					    style: 'none'
 					  }) %>
 					<% } %>
 					</span>
@@ -50,7 +50,7 @@
 					  <%- list_tags(post.tags, {
 					    show_count: false,
 					    class: 'article-tag',
-					    style: 'unordered list'
+					    style: 'none'
 					  }) %>
 					<% } %>
 				</div>

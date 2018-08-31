@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="zh-CN" class="crt crt-side-box-on crt-nav-on crt-nav-type2 crt-main-nav-on crt-sidebar-on crt-layers-1">
 	<%- partial('_partial/head') %>
-
-	<body class="category">
+	<%
+		var page_class = 'category';
+		if(is_post()){
+			page_class = 'single';
+		}
+	%>
+	<body class="<%- page_class %>">
 		<div class="crt-wrapper">
 			<%- partial('_partial/header') %>
 			<div id="crt-container" class="crt-container">
