@@ -28,12 +28,13 @@ menu:
 #  Home: /
 # Archives: /archives
 #  Github: https://gitee.com/theferryman
+#   about: /about
 rss: /atom.xml
 
 # footer
 footer: Deveye @ All Rights Reserved 2019
 # 内容
-excerpt_link: 阅读更多
+excerpt_link: read more
 fancybox: true
 
 # 小部件

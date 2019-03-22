@@ -4,7 +4,7 @@
 		<h2 class="screen-reader-text">Post navigation</h2>
 		<div class="row">
 			<% if (post.prev){ %>
-			<div class="col-sm-5 col-xs-6">
+			<div class="col-sm-5 col-xs-6" style="float: left">
 				<div class="post-nav-prev">
 					<a href="<%- url_for(post.prev.path) %>" rel="prev">
 						<span class="text-left text-muted"><%= __('newer') %></span>
@@ -19,7 +19,7 @@
 			</div>
 			<% } %>
 			<% if (post.next){ %>
-			<div class="col-sm-5 col-sm-offset-2 col-xs-6">
+			<div class="col-sm-5 col-xs-6" style="float: right">
 				<div class="post-nav-next">
 					<a href="<%- url_for(post.next.path) %>" rel="next">
 						<span class="text-right text-muted"><%= __('older') %></span>
