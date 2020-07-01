@@ -27,7 +27,7 @@
 
 		<div class="post-content entry-content editor clearfix clear-mrg">
 			<p>
-				<%= post.excerpt %>
+				<p><%- truncate(post.excerpt, {length: 100}) %></p>
 			</p>
 		</div>
 
