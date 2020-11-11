@@ -21,7 +21,7 @@ social_platforms:
     crt_icon: crt-icon-google-plus
   - url: https://dribbble.com/
     crt_icon: crt-icon-instagram
-  - url: https://github.com/klugjo/hexo-theme-anodyne
+  - url: https://github.com/YangKCoder/hexo-deveye
     crt_icon: crt-icon-pinterest
 # 顶部导航
 menu:
