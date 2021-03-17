@@ -19,11 +19,17 @@
 
 		<div class="crt-card bg-primary text-center">
 			<div class="crt-card-avatar">
-				<img class="avatar avatar-195" src="<%= theme.about_widget_avatar_url %>" srcset="<%= theme.about_widget_avatar_url %>" width="195" height="195" alt="">
+				<span class="crt-avatar-state">
+					<span class="crt-avatar-state1">
+						<img class="avatar avatar-195" alt="" src="<%= theme.about_widget_avatar_url_1 %>" srcset="<%= theme.about_widget_avatar_url_1 %>">
+					</span>
+					<span class="crt-avatar-state2">
+						<img class="avatar avatar-195" alt="" src="<%= theme.about_widget_avatar_url_2 %>" srcset="<%= theme.about_widget_avatar_url_2 %>">
+					</span>
+				</span>
 			</div>
 			<div class="crt-card-info">
 				<h2 class="text-upper"><%= theme.about_widget_nikename %></h2>
-
 				<p class="text-muted">
 					<%- theme.about_widget_text %>
 				</p>

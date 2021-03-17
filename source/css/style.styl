@@ -4766,7 +4766,39 @@ textarea.form-item {
 .crt-card-info .crt-social {
 	margin-bottom: 0
 }
+.crt-card-avatar {
+	position: relative
+}
 
+.crt-card-avatar+.crt-card-info {
+	margin-top: 33px
+}
+
+.crt-avatar-state {
+	cursor: pointer
+}
+
+.crt-avatar-state:hover .crt-avatar-state2 {
+	visibility: visible;
+	opacity: 1
+}
+
+.crt-avatar-state2 {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .2s ease-out, visibility .2s ease-out
+}
+
+.crt-card-wide .crt-avatar-state,
+.pf-figure,
+.pf-project {
+	position: relative
+}
 @media (min-width:992px) {
 	.crt-card-wide {
 		width: 100%;
@@ -5917,4 +5949,14 @@ body,h1,h2,h3,h4,h5,h6 {
 .btn-light {
 	color: #000;
 	background-color: #fff
+}
+
+#crtBtnUp {
+	font-size: 22px;
+	right: 20px;
+	bottom: 20px;
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	display: none
 }
