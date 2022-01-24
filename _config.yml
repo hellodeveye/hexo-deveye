@@ -1,5 +1,5 @@
 # Logo
-logo_image_source: https://theferryman.gitee.io/img/cat.svg
+logo_image_source: http://localhost:4000/img/gopher.svg
 
 # Post
 default_post_title: Untitled
@@ -7,8 +7,8 @@ default_post_author: yangkai
 
 # About Widget
 about_widget_nikename: KIM
-about_widget_avatar_url_1: http://qiniu.deveye.cn/20210317132708.png
-about_widget_avatar_url_2: http://qiniu.deveye.cn/20210317132707.png
+about_widget_avatar_url_1: https://qiniu.deveye.cn/20210317132708.png
+about_widget_avatar_url_2: https://qiniu.deveye.cn/20210317132707.png
 about_widget_text: "stay hungry , stay foolish "
 about_widget_bottom: <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="360" height="86" src="//music.163.com/outchain/player?type=2&amp;id=31473269&amp;auto=0&amp;height=66"></iframe>
 
@@ -26,9 +26,8 @@ social_platforms:
     crt_icon: crt-icon-pinterest
 # 顶部导航
 menu:
-#  Home: /
-# Archives: /archives
-#  Github: https://gitee.com/theferryman
+  Home: /
+  About: /about
 rss: /atom.xml
 
 # footer
