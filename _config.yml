@@ -10,7 +10,7 @@ about_widget_nikename: KIM
 about_widget_avatar_url_1: https://qiniu.deveye.cn/20210317132708.png
 about_widget_avatar_url_2: https://qiniu.deveye.cn/20210317132707.png
 about_widget_text: "stay hungry , stay foolish "
-about_widget_bottom: <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="360" height="86" src="//music.163.com/outchain/player?type=2&amp;id=31473269&amp;auto=0&amp;height=66"></iframe>
+about_widget_bottom: <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="360" height="86" src="//music.163.com/outchain/player?type=2&amp;id=574919767&amp;auto=0&amp;height=66"></iframe>
 
 # Social Media Platforms
 social_platforms:
@@ -32,6 +32,7 @@ rss: /atom.xml
 
 # footer
 footer: Deveye @ All Rights Reserved 2022
+beian: <a href="https://beian.miit.gov.cn" target="_blank">陕ICP备16008414号-1</a>
 # 内容
 excerpt_link: read more
 fancybox: true
@@ -54,4 +55,4 @@ index_widgets:
 archive_type: 'monthly'
 show_count: true
 
-favicon: /favicon.ico
+favicon: /img/favicon.ico
